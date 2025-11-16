@@ -2,7 +2,7 @@
 function pitagoras(a, b, c) {
   const nums = [a, b, c].sort((x, y) => x - y);
   const wynik = nums[0] ** 2 + nums[1] ** 2 === nums[2] ** 2;
-  console.log(`Liczby ${a}, ${b}, ${c} ${wynik ? 'tworzą' : 'nie tworzą'} trójkę pitagorejską`);
+  console.log(`Liczby ${a}, ${b}, ${c} ${wynik ? 'tworzą trójkę pitagorejską' : 'nie tworzą trójki pitagorejskiej'} `);
   return wynik;
 }
 
@@ -144,3 +144,4 @@ poleFigury('prostokat', 5, 3);
 poleFigury('trapez', 4, 6, 5);
 poleFigury('rownoleglobok', 7, 4);
 poleFigury('trojkat', 6, 8);
+
